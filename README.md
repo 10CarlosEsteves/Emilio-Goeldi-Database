@@ -28,7 +28,8 @@ Destaca-se, na fase de inserção, que o resultado final foi a geração de um a
 <ul>
   <li>Carlos Henrique Miranda Esteves</li>
   <li>Lucas Almeida Miralha de Figueiredo</li>
-  <li>Milk</li>
+  <li>Lucas Andrey Nunes de Aragão</li>
+  <li>Thiago Teixeira França</li>
 </ul>
 
 
