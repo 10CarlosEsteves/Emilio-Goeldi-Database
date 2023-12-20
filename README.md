@@ -17,7 +17,8 @@ Destaca-se, na fase de inserção, que o resultado final foi a geração de um a
 
 <h2>Dashboard Power BI</h2>
 
-<p>  
+<p>
+  Ainda como parte da lauda do projeto, um dashboard em Power BI foi criado para melhor visualização dos dados por partes dos pesquisadores 
 </p>
 
 
