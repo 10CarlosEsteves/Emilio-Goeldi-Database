@@ -12,7 +12,7 @@ Destaca-se, na fase de inserção, que o resultado final foi a geração de um a
 <h2>Banco de Dados PostgreSQL</h2>
 
 <p>
-  A implementação do banco de dados deveria ser robusta, não redundante, intuitiva, de fácil manutenção e que oferecesse flexibilidade aos dados inseridos por pesquisadores. Através desses pré-requisitos, o banco de dados final seguiu a risca as formas normais e as implementações de automações comos triggers, views e procedures para melhor funcionamento. O resultado pode ser visualizado na pasta <b>Banco de dados PostgreSQL</b>. Para melhorar a funcionalidade dos scripts, execute em ordem: tabelas, triggers & functions & views, inserts, testes das automações. O resultado do modelo E-R com os dados presentes no arquivo CSV pode ser visualizado parcialmente na imagem abaixo:
+  A implementação do banco de dados deveria ser robusta, não redundante, intuitiva, de fácil manutenção e que oferecesse flexibilidade aos dados inseridos por pesquisadores. Através desses pré-requisitos, o banco de dados final seguiu a risca as formas normais e as implementações de automações comos triggers, views e procedures para melhor funcionamento. O resultado pode ser visualizado e baixado na pasta <b>Banco de dados PostgreSQL</b>. Para melhorar a funcionalidade dos scripts, execute em ordem: tabelas, triggers & functions & views, inserts, testes das automações. O resultado do modelo E-R com os dados presentes no arquivo CSV pode ser visualizado parcialmente na imagem abaixo:
 </p>
 <img src="Imagens/Banco de Dados/Modelo E-R Parcial.png">
 
@@ -24,12 +24,12 @@ Destaca-se, na fase de inserção, que o resultado final foi a geração de um a
 <img src="Imagens/Dashboard Power BI/Dashboard Goeldi Parcial.png">
 
 <h2>Créditos</h2>
-<p>Destaco a equipe por trás da implementação deste projeto. Somos a NextEvo</p>
+<p>Destaco a equipe por trás da implementação deste projeto. Somos a NextEvo.</p>
 <ul>
-  <li>Carlos Henrique Miranda Esteves</li>
-  <li>Lucas Almeida Miralha de Figueiredo</li>
-  <li>Lucas Andrey Nunes de Aragão</li>
-  <li>Thiago Teixeira França</li>
+  <li><a href="https://github.com/10CarlosEsteves">Carlos Henrique Miranda Esteves</a></li>
+  <li><a href="https://github.com/LucasMiralha">Lucas Almeida Miralha de Figueiredo</a></li>
+  <li><a href="https://github.com/Luckandrey">Lucas Andrey Nunes de Aragão</a></li>
+  <li><a href="https://github.com/Thiagottf">Thiago Teixeira França</a></li>
 </ul>
 
 
