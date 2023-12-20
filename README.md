@@ -2,7 +2,7 @@
 <h1>Resumo</h1>
 
 <p>
-  O seguinte projeto foi desenvolvido como parte de uma avaliação da disciplina de banco de dados no CESUPA (Centro Universitário do Estado do Pará), ministrada pelo professor <a href="https://www.linkedin.com/in/isaac-elgrably-8a3440115/">Isaac Elgrably</a>. O projeto consistiu na construção de um banco de dados a partir de um arquivo CSV (Comma Separated Values). Ao analisar os dados presentes no CSV, a missão foi compreender como esses dados estavam relacionados entre si e como o modelo Entidade-Relacionamento deveria ser aplicado nesse contexto. Uma vez construído o modelo E-R, ele foi implementado no PostgreSQL. Após a implementação do banco de dados, os dados do arquivo CSV foram tratados e, por fim, inseridos no banco. A etapa de inserção no banco de dados foi realizada tanto manualmente quanto automaticamente, utilizando a linguagem de programação Python para tratar erros e eliminar redundâncias de dados.
+  O seguinte projeto foi desenvolvido como parte de uma avaliação da disciplina de banco de dados no CESUPA (Centro Universitário do Estado do Pará), ministrada pelo professor <a href="https://www.linkedin.com/in/isaac-elgrably-8a3440115/">Isaac Elgrably</a>. O projeto consistiu na construção de um banco de dados a partir de um arquivo CSV (Comma Separated Values), proveniente da base de dados do Museu Paraense Emíliog Goeldi, com o título de Annelida Collection. Ao analisar os dados presentes no CSV, a missão foi compreender como esses dados estavam relacionados entre si e como o modelo Entidade-Relacionamento deveria ser aplicado nesse contexto. Uma vez construído o modelo E-R, ele foi implementado no PostgreSQL. Após a implementação do banco de dados, os dados do arquivo CSV foram tratados e, por fim, inseridos no banco. A etapa de inserção no banco de dados foi realizada tanto manualmente quanto automaticamente, utilizando a linguagem de programação Python para tratar erros e eliminar redundâncias de dados.
 </p>
 
 <p>
@@ -18,7 +18,7 @@ Destaca-se, na fase de inserção, que o resultado final foi a geração de um a
 <h2>Dashboard Power BI</h2>
 
 <p>
-  Ainda como parte da lauda do projeto, um dashboard em Power BI foi criado para melhor visualização dos dados por partes dos pesquisadores 
+  Ainda como parte da lauda do projeto, um dashboard em Power BI foi criado para melhor visualização dos dados de Annelida por partes dos pesquisadores. O dashboard contém informações úteis como dois mapas(um mapa de densidades 3D e um mapa normal da Azure), um gráfico de pizza com os locais das pesquisas e um gráfico de rosquinha com a quantidade de táxons etc. <img src="Imagens/Dashboard Power Bi/Dashboard Goeldi Parcial.png">
 </p>
 
 
