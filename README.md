@@ -14,7 +14,7 @@ Destaca-se, na fase de inserção, que o resultado final foi a geração de um a
 <p>
   A implementação do banco de dados deveria ser robusta, não redundante, intuitiva, de fácil manutenção e que oferecesse flexibilidade aos dados inseridos por pesquisadores. Através desses pré-requisitos, o banco de dados final seguiu a risca as formas normais e as implementações de automações comos triggers, views e procedures para melhor funcionamento. O resultado pode ser visualizado e baixado na pasta <b>Banco de dados PostgreSQL</b>. Para melhorar a funcionalidade dos scripts, execute em ordem: tabelas, triggers & functions & views, inserts, testes das automações. O resultado do modelo E-R com os dados presentes no arquivo CSV pode ser visualizado parcialmente na imagem abaixo:
 </p>
-<img src="Imagens/Banco de Dados/Modelo E-R Parcial.png">
+<img src="Imagens/Banco de Dados/Modelo E-R Parcial">
 
 <h2>Dashboard Power BI</h2>
 
