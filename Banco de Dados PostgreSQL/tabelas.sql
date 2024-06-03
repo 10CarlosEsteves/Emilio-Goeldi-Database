@@ -96,7 +96,9 @@ CREATE TABLE research_issue(
 CREATE TABLE researcher(
     id SERIAL PRIMARY KEY,
     name CHARACTER VARYING(80) NOT NULL,
-    surname CHARACTER VARYING(80) NOT NULL
+    surname CHARACTER VARYING(80) NOT NULL,
+    email  CHARACTER VARYING(50),
+    password CHARACTER VARYING(255)
 );
 
 --Tabela Intermediária de pesquisador e pesquisa
