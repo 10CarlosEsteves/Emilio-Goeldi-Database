@@ -56,9 +56,39 @@ CREATE TABLE localization(
     FOREIGN KEY (city_id) REFERENCES city (id)
 );
 
+--Tabela Contendo Dados do Pesquisador
+CREATE TABLE researcher(
+    id SERIAL PRIMARY KEY,
+    name CHARACTER VARYING(80) NOT NULL,
+    surname CHARACTER VARYING(80) NOT NULL,
+    email  CHARACTER VARYING(50),
+    password CHARACTER VARYING(255),
+	telephone CHARACTER VARYING(11),
+	address CHARACTER VARYING(255)
+);
+
+--Tabela de Grupos de Pesquisa
+CREATE TABLE research_group(
+	ID SERIAL PRIMARY KEY,
+	name CHARACTER VARYING(80) NOT NULL,
+	description TEXT NOT NULL,
+	institution CHARACTER VARYING(80) NOT NULL
+);
+
+--Tabela Intermediária de pesquisador e cargo em grupo de pesquisa
+CREATE TABLE member_of(
+	researcher_id INTEGER NOT NULL,
+	group_id INTEGER NOT NULL,
+	researcher_role CHARACTER VARYING(10) CHECK(researcher_role in ('Admin', 'Researcher')) NOT NULL,
+
+	FOREIGN KEY (researcher_id) REFERENCES researcher(id),
+	FOREIGN KEY (group_id) REFERENCES research_group(id)
+);
+
 --Tabela de Pesquisa
 CREATE TABLE research(
     gbifID BIGINT PRIMARY KEY,
+	research_groupid INTEGER,
     license_rights INTEGER NOT NULL,
 	collection_code CHARACTER VARYING(30) NOT NULL,
     ocurrenceID CHARACTER VARYING(30) UNIQUE NOT NULL,
@@ -70,9 +100,21 @@ CREATE TABLE research(
     publishing_country INTEGER NOT NULL,
     localization_id INTEGER NOT NULL,
 
+	FOREIGN KEY (research_groupid) REFERENCES research_group(id),
     FOREIGN KEY (license_rights) REFERENCES rights (id),
     FOREIGN KEY (publishing_country) REFERENCES country(id),
     FOREIGN KEY (localization_id) REFERENCES localization (id)
+);
+
+--Tabela Intermediária de pesquisador e pesquisa
+CREATE TABLE researched_by(
+    gbifID BIGINT,
+    researcher_id INTEGER,
+
+    PRIMARY KEY(gbifID, researcher_id),
+
+    FOREIGN KEY (gbifID) REFERENCES research (gbifID) ON DELETE CASCADE,
+    FOREIGN KEY (researcher_id) REFERENCES researcher (id)
 );
 
 --Tabela de Problemas
@@ -90,26 +132,6 @@ CREATE TABLE research_issue(
 
     FOREIGN KEY (gbifID) REFERENCES research (gbifID)  ON DELETE CASCADE,
     FOREIGN KEY (issue_id) REFERENCES issue (id)
-);
-
---Tabela Contendo o Nome do Pesquisador
-CREATE TABLE researcher(
-    id SERIAL PRIMARY KEY,
-    name CHARACTER VARYING(80) NOT NULL,
-    surname CHARACTER VARYING(80) NOT NULL,
-    email  CHARACTER VARYING(50),
-    password CHARACTER VARYING(255)
-);
-
---Tabela Intermediária de pesquisador e pesquisa
-CREATE TABLE researched_by(
-    gbifID BIGINT,
-    researcher_id INTEGER,
-
-    PRIMARY KEY(gbifID, researcher_id),
-
-    FOREIGN KEY (gbifID) REFERENCES research (gbifID) ON DELETE CASCADE,
-    FOREIGN KEY (researcher_id) REFERENCES researcher (id)
 );
 
 --Tabela de Reino
